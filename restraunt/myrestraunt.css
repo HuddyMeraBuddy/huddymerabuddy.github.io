@@ -1,0 +1,45 @@
+@font-face{
+    font-family: "Chewy-Regular";
+    src: url('fonts/Chewy-Regular.ttf');
+}  
+body{
+    background-color: rgb(32,33,44) ; 
+    background-size: cover;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+   
+    color: rgb(255,74,59);
+}
+   
+ul{ 
+    
+    display: flex;
+    justify-content: space-around;
+    padding: 15px ;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 370px));
+    text-align: center;
+    background-color: #EEE5E4;
+    background-attachment:none; 
+    margin-block-start:1em;
+    margin-block-end: 20em;
+    margin-inline-start: 0em;
+    margin-inline-end: 0em;
+}
+a{
+    display: inline-block;
+    transition: all 0.3s;
+    border: 5px solid Transparent;
+    color: #C9242A;
+    
+    text-decoration: none;
+}
+a:hover{
+    color:darkgreen;
+}
+
+a:active{
+    color: fuchsia;
+}
