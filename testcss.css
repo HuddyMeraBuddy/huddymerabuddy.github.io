@@ -1,0 +1,44 @@
+*{
+    font-size: larger;
+}
+body{
+    color: indigo;
+    background-image: url("images/1600w-VwJMC37j5jQ.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080px;
+}
+/* ol{
+    background-color: rgba(161, 146, 12 ,.7);
+    /* text-indent: 20px; */
+/* }  */
+
+
+h1{
+    background-color: hotpink;
+    color:rgb(168,45,45);
+    border-color: darkcyan;
+    border-radius: 20cm;
+    border-width: .5cm;
+    border-style: solid;
+    
+    /* height: 300px;
+width: 300px;
+background-color: #bbbbaa; */
+
+}
+
+h2{
+    border-color: darkcyan;
+    border-radius: 20cm;
+    border-width: .5cm;
+    border-style: solid;
+    background-color: burlywood;
+    color:rgb(168,45,45);
+    
+ol{
+    overflow: scroll;
+}
+button{
+    ;
+}
