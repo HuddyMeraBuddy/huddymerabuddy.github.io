@@ -19,7 +19,6 @@ ul{
     justify-content: space-around;
     padding: 15px ;
     list-style: none;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 370px));
     text-align: center;
     background-color: #EEE5E4;
     background-attachment:none; 
@@ -28,18 +27,33 @@ ul{
     margin-inline-start: 0em;
     margin-inline-end: 0em;
 }
-a{
-    display: inline-block;
-    transition: all 0.3s;
-    border: 5px solid Transparent;
-    color: #C9242A;
-    
-    text-decoration: none;
-}
-a:hover{
-    color:darkgreen;
+
+img{
+    width: 100px;
+    height: 150px;
+
 }
 
-a:active{
-    color: fuchsia;
+nav{
+	width: 110%;
+	position: absolute;
+	top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+a{
+    display: inline-block;
+    transition: all 0.4s;
+    border: 5px solid Transparent;
+    color: #C9242A;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 20px;
+ 
+
+}
+a:hover{background-position: 100%;
+    background-color:rgb(229,106,39);
+    padding: 20px;
+    filter: blur(0);
+    transform: translate(16px);
 }
