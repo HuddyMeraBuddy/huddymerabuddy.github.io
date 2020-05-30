@@ -2,7 +2,6 @@
     font-family: "Chewy-Regular";
     src: url('Chewy-Regular.ttf');
 }
-
 body{
     background-color: rgb(32,33,44) ; 
     background-size: cover;
@@ -51,12 +50,17 @@ a{
     letter-spacing: 2px;
     font-size: 20px;
 }
+<<<<<<< HEAD:library.css
 
 a:hover{
     background-position: 100%;
     border-bottom-color:#C9242A;
     border-top-color:#C9242A;
     
+=======
+a:hover{background-position: 100%;
+    background-color:rgb(0,219,228);
+>>>>>>> 948a24b18070e6d39ec1acd072974a799de560b3:myrestraunt.css
     padding: 15px;
     filter: blur(0);
     transform: translate(16px);
