@@ -1,29 +1,31 @@
 @font-face{
     font-family: "Chewy-Regular";
-    src: url('fonts/Chewy-Regular.ttf');
-}  
+    src: url('Chewy-Regular.ttf');
+}
+
 body{
     background-color: rgb(32,33,44) ; 
     background-size: cover;
     font-size: 15px;
 }
+
 h1{
     text-align: center;
    
     color: rgb(255,74,59);
 }
    
-ul{ 
-    
+ul{    
     display: flex;
     justify-content: space-around;
     padding: 10px ;
     list-style: none;
     text-align: center;
     background-color: #EEE5E4;
+    background-size: cover;
     background-attachment:none; 
     margin-block-start:1em;
-    margin-block-end: 20em;
+    margin-block-end: 2em;
     margin-inline-start: 0em;
     margin-inline-end: 0em;
 }
@@ -34,12 +36,12 @@ img{
 
 }
 
-nav{
+/* nav{
 	width: 110%;
 	position: absolute;
 	top: 50%; left: 50%;
     transform: translate(-50%,-50%);
-}
+} */
 a{
     display: inline-block;
     transition: all 0.4s;
@@ -47,13 +49,48 @@ a{
     color: #C9242A;
     text-decoration: none;
     letter-spacing: 2px;
-    font-size: 15px;
- 
-
+    font-size: 20px;
 }
-a:hover{background-position: 100%;
-    background-color:rgb(229,106,39);
+
+a:hover{
+    background-position: 100%;
+    border-bottom-color:#C9242A;
+    border-top-color:#C9242A;
+    
     padding: 15px;
     filter: blur(0);
     transform: translate(16px);
+}
+
+.ullib{
+    display: inline-block;
+    transition: all 0.4s;
+    border: 5px solid Transparent;
+    color: #C9242A;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+table{
+    width: 100%;
+    font-size: 40px;
+    background-color: #C9242A ;
+    /* border-color: #EEE5E4; */
+}
+th{
+    color: Black;
+    border: 1px #EEE5E4 ;
+}
+td,.reflink{
+    border: 1px #EEE5E4 ;
+    margin-left: 4cm;
+    color: #EEE5E4 ;
+    width: 60%;
+    font-size: 30px;
+}
+
+.libpic{
+    width: 400;
+    height: 300;
+    border-style: outset;
 }
