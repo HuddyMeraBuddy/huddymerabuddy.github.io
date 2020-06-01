@@ -83,7 +83,9 @@ table{
     /* border-color: #EEE5E4; */
 }
 th{
-    color: #F9CA1F
+    background-color: rgb(32,33,44) ; 
+    
+    color: #F9CA1F;
    
 }
 td,.reflink{
