@@ -115,7 +115,7 @@ td,.reflink{
 }
 
 .row{
-    display: grid;
+    display: flex;
     justify-content: space-around;
 }
 .column{
