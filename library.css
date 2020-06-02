@@ -16,7 +16,7 @@ body{
 }
 
 @media screen and (max-width:1000px){
-#imgb{
+.column{
 		width:100%;
 	}}
    
