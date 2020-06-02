@@ -16,7 +16,7 @@ body{
 }
 
 @media screen and max-width(800px){
-	.column{
+	.row .column{
 		width:100%;
 	}
    
