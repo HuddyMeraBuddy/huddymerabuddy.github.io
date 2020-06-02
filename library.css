@@ -16,9 +16,9 @@ body{
 }
 
 @media screen and (max-width:800px){
-	.row .column{
+#imgb{
 		width:100%;
-	}
+	}}
    
 ul{    
     display: flex;
