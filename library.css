@@ -118,7 +118,8 @@ td,.reflink{
     justify-content: space-around;
 }
 .column{
-    flex: 33.33%;
+    width: 33.33%;
+    float:left;
     padding:5px;
     margin-left: 10px;
     margin-right: 10;
