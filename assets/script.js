@@ -1,7 +1,7 @@
 var $jq = jQuery.noConflict();
 $jq(document).ready(function(){
 
-$jq('.post-wrapper').slick({
+$jq('.post-wraper').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
