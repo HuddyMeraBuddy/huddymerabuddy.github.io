@@ -39,95 +39,81 @@ a span{
     clear: both;
 }
 .page-wraper{
-    min-height: 35%;
+    min-height: 100%;
 }
 
 .page-wraper a:hover{
     text-decoration: none;
+    /* color: #F3969A; */
 }
 
 
+/* Post slider */
+
 .post-slider{
-    margin: 0px auto;
+    margin: 0px auto ;
     position: relative;
 }
 
 .post-slider .slider-title{
-        text-align: center;
-        margin: 30px auto;
+    text-align: center;
+    margin: 30px auto;
 }
 
 .post-slider .next{
     position: absolute;
-    top: 50%;
-    right:85px;
-    z-index: 1;
-    font-size: 2em;
-    cursor: pointer ;
-    color: deeppink;
-}
-
-.post-slider .next:hover{
-    position: absolute;
-    top: 50%;
-    right:85px;
-    z-index: 1;
-    font-size: 2em;
+    top: 45%;
+    right: 60px;
+    color:#FF7851;
+    font-size: 2.5em;
     cursor: pointer;
-    background-color:rgba(105,105,105,0.5);
-    color: deeppink;
+    
 }
 
 .post-slider .prev{
     position: absolute;
-    top: 50%;
-    left:85px;
-    z-index: 1;
-    font-size: 2em;
+    top: 45%;
+    left: 60px;
+    color:#FF7851;
+    font-size: 2.5em;
     cursor: pointer;
-   
-    color: deeppink;
-}
-.post-slider .prev:hover{
-    position: absolute;
-    top: 50%;
-    left:85px;
-    z-index: 1;
-    font-size: 2em;
-    cursor: pointer;
-    background-color:rgba(105,105,105,0.5);
-    color: deeppink;
+    
 }
 
-.post-slider .post-wrapper{
-    width: 84%;
+.post-slider .post-wraper{
+    width: 87%;
     height: 350px;
+    padding: 10px 0px 10px 0px ;
     overflow: hidden;
     margin: 0px auto;
-
-    padding: 10px,0px,10px,0px;
 }
 
-.post-slider .post-wrapper .posts{
-    width: 300px;
+.post-slider .post-wraper .post{
     height: 330px;
-    margin: 10px;
+    width: 300px;
+    margin: 0px 10px;
     display: inline-block;
-    background-color: white;  
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem -1rem #a0a0a080;
+}
+.post-slider .post-wraper .post .post-info{
+    height: 100px;
+    margin: 5px;
 }
 
-.post-slider .post-wrapper .posts .post-info{
-    height: 130px;
-    padding: 0px 5px;
+.post-slider .post-wraper .post .post-info a:hover{
+    color:#F3969A ;
 
 }
 
-.post-slider .post-wrapper .posts .slider-image{
+.post-slider .post-wraper .post .slider-image{
     width: 100%;
-    height: 250px;
+    height: 230px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
 
 
 /* Content */
@@ -173,7 +159,7 @@ a span{
 } 
 
 .content .main-content .recent-post-title{
-    margin-left: 20px;
+    margin: 20px;
     /* position: relative; */
 
 }
@@ -188,6 +174,7 @@ a span{
 .content .sidebar{
     width: 30%;
     float: left;
+    
     /* border: 1px solid darkblue; */
     height: 300px;
 }
@@ -223,6 +210,124 @@ a span{
     text-decoration: none;
     color:  #F3969A;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* SINGLE.HTML CONTENT */
+
+
+.content .main-content.single{
+    /* display: inline-block; */
+    padding: 20px 50px;
+    /* font-size: 1.1em; */
+    background-color: white;
+    border-radius: 10px;
+}
+
+.content .main-content.single .post-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content .main-content.single .post-content{
+    text-align: justify;
+}
+
+.content .sidebar.single{
+    padding:0px 10px;
+}
+
+.content .popular .section-title{
+    margin-bottom: 30px;
+}
+
+
+.content .popular .post{
+    border-bottom: 1px solid rgb(255, 120, 81);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.content .popular .post img{
+    height: 70px;
+    width: 80px;
+    float: left;
+    margin-right: 10px;
+}
+
+.content .popular .post h6 a:hover{
+    color:#F3969A;
+    margin: 5px;
+    transition: .4s all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Auth Pages */
+
+.auth-content{
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #69BDCE;
+    color: white;
+}
+.auth-content .form-title{
+    color: white;
+    text-align: center;
+}
+
+.auth-content form div{
+    margin-bottom: 20px;
+}
+
+.auth-content form .reg-btn{
+    margin-left:39%;
+}
+
+.auth-content form h6{
+    color :white;
+    text-align:center ;
+}
+
+.auth-content form h6 a{
+    color:white;
+    text-decoration: underline;
+
+}
+
+.auth-content form a:hover{
+    color:#EF7479;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
 
 
 /* FOOTER */
@@ -304,27 +409,6 @@ a span{
     line-height: 1.5rem;
     border: none;
 }
-/* footer p{
-    line-height: 25px;
-}
-footer a{
-    color: white;
-    transition: .2s all;
-    margin-bottom:30px;
-}
-footer a:hover{
-    text-decoration: none;
-    color:aquamarine;
-    padding: 10px;
-    transition: .3s all;
-}
-footer h3 span{
-    color: aquamarine;
-}
-footer h3{
-    color: white;
-    margin-top: 30px;
-} */
 
 .footer .footer-bottom{
     /* height: 5px; */
