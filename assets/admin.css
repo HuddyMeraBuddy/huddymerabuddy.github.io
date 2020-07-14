@@ -1,0 +1,146 @@
+body{
+    background-color:#D9D8DA ;
+}
+
+.navBar{
+    background-color: #E74D3E;
+    color: #ffffff;
+}
+
+.admin-wraper{
+    /* border: 3px solid skyblue; */
+    height: calc(100% - 82px);
+    display: flex;
+}
+
+.admin-wraper .left-sidebar{
+    flex: 2;
+    height: 100%;
+    /* border: 3px solid red; */
+    /* background-color: #F7BBBE; */
+    background-color:#363234;
+}
+
+.admin-wraper .left-sidebar h3{
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.admin-wraper .left-sidebar ul{
+    list-style: none;
+    margin-top: 40px;
+    padding: 0px;
+}
+
+.admin-wraper .left-sidebar ul li a{
+    padding:20px 0px 20px 0px;
+    text-align: center;
+    display: block;
+    border-bottom:1px solid #000000;
+    color: #EB9195;;
+    
+}
+
+.admin-wraper .left-sidebar ul li a:hover{
+    background-color: #000000;
+    text-decoration: none;
+    color: #4AA48A;
+}
+
+.admin-wraper .left-sidebar ul li a:active{
+    background-color: #000000;
+    text-decoration: none;
+    color: #4AA48A;
+}
+
+
+.admin-wraper .admin-content{
+    flex: 9;
+    height: 100%;
+    padding: 40px 100px 40px;
+    overflow: scroll;
+
+    /* border: 2px dashed blue; */
+}
+
+.admin-content .user-content ul{
+    list-style-type: none;
+    padding: 50px;
+    margin: 20px 0px 0 260px;
+}
+
+.admin-content .user-content ul a{
+    color: white;
+    font-size: x-large;
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color:#4AA48A ;
+    border: 1px solid #4AA48A;
+    width: 60%;
+}
+
+.admin-content .user-content ul a:hover{
+    background-color: black;
+    color: #4AA48A;
+    text-decoration: none;
+}
+
+.admin-content .user-content.ch{
+    width: 50%;
+    margin-left: 260px;
+}
+
+.admin-content .user-content.ch .page-title{
+    text-align: center;
+}
+
+
+.admin-content .page-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.admin-content .button{
+    background-color: green;
+}
+
+.admin-content .button:hover{
+    background-color: #E74D3E;
+}
+
+.edit{
+    color: white;
+}
+
+.delete{
+    color: red;
+}
+
+.publish{
+    color: steelblue;
+}
+
+th.action{
+    text-align: center;
+}
+
+.edit:hover,
+.delete:hover,
+.publish:hover{
+    text-decoration: none;
+    color: darkmagenta;
+}
+
+.admin-wraper .admin-content .btn-group .button{
+    margin-right: 20px;
+}
+
+.admin-content .content .input{
+    color: black;
+}
+
+.admin-content .content .body{
+    color: black;
+}

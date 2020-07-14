@@ -1,0 +1,166 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Modak&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Styling -->
+    <link rel="stylesheet" href="../../assets/bootstrap.min_mint .css">
+
+    <!-- Custom styling  -->
+    <link rel="stylesheet" href="../../assets/style.css" type="text/css">
+
+    <!-- Admin styling -->
+    <link rel="stylesheet" href="../../assets/admin.css" type="text/css">
+
+    <!-- Font Awsome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Admin Section-Manage Posts</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navBar" style="z-index:2;">
+        <a href="#" class="navbar-brand" style='margin-left: 60px;'>
+            <h1><span>Sha</span>kti</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle='collapse' data-target='#navbarNavDropdown'
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id='navbarNavDropdown'>
+            <!-- <div class="container"> -->
+            <ul class="navbar-nav text-center ml-auto" style="padding-right: 70px;">
+                <div class="container">
+                        <li class='nav-item '>
+                        <a href="../../index.html" class='nav-link'><b> Public </b></a>
+                    </li>
+                </div>
+                <li class="nav-item">
+                    <div class="dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="menu" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>Prime</b>
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="margin-right: 1px;">
+                            <a class="dropdown-item " href="../../login.html" style="color: red;">Log Out</a>
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- </div> -->
+    </nav>
+
+    <!-- Page wrapper -->
+
+    <div class="admin-wraper">
+
+        <!-- Side bar -->
+        <div class="left-sidebar">
+            <h3>Dashboard</h3>
+
+            <ul>
+                <li><a href="../users/index.html">User Profile</a></li>
+                <li><a href="index.html">Manage Posts</a></li>
+                <li><a href="../topics/index.html">Manage Topics</a></li>
+
+            </ul>
+
+        </div>
+        <!-- //side bar -->
+
+
+        <!-- Admin Content -->
+        <div class="admin-content">
+            <div class="btn-group">
+                <a href="create.html" class="btn button"><i class="fa fa-plus" aria-hidden="true">&nbsp;Add Post</i></a>
+            </div>
+
+            <div class="content">
+                <h2 class="page-title">Manage Posts</h2>
+
+                <!-- content table -->
+                <table class="table table-dark table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">S.No.</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Author</th>
+                        <th scope="col" colspan="3" class="action">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table-primary">
+                        <td>1</td>
+                        <td>The First post on this blog</td>
+                        <td>Optimus Prime</td>
+                        <td><a href="#" class="edit">Edit</a></td>
+                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="#" class="publish">publish</a></td>    
+                      </tr>
+                      <tr class="table-secondary">
+                        <td>2</td>
+                        <td>The Second post on this blog</td>
+                        <td>Huddy Buddy</td>
+                        <td><a href="#" class="edit">Edit</a></td>
+                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="#" class="publish">publish</a></td>    
+                      </tr>
+                      <tr class="table-primary">
+                        <td>3</td>
+                        <td>The Third post on this blog</td>
+                        <td>Mr Paradox</td>
+                        <td><a href="#" class="edit">Edit</a></td>
+                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="#" class="publish">publish</a></td>    
+                      </tr>
+                      <tr class="table-secondary">
+                        <td>4</td>
+                        <td>The fourth post on this page</td>
+                        <td>Professor Dobby</td>
+                        <td><a href="#" class="edit">Edit</a></td>
+                        <td><a href="#" class="delete">Delete</a></td>
+                        <td><a href="#" class="publish">publish</a></td>    
+                      </tr>
+                    </tbody>
+                  </table> 
+
+
+            </div>
+
+        </div>
+        <!-- //Admin Content -->
+
+    </div>
+    <!-- //Page Wrapper -->
+
+
+
+    <!-- custom bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+
+    <!-- javascript-->
+    <script>
+        CKEDITOR.replace(editor);
+    </script>
+    <script src="../../assets/script.js" type=text/javascript></script>
+</body>
+
+</html>
