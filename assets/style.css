@@ -48,6 +48,15 @@ a span{
 }
 
 
+
+
+
+
+
+
+
+
+
 /* Post slider */
 
 .post-slider{
@@ -67,6 +76,7 @@ a span{
     color:#FF7851;
     font-size: 2.5em;
     cursor: pointer;
+    z-index: 1;
     
 }
 
@@ -77,6 +87,7 @@ a span{
     color:#FF7851;
     font-size: 2.5em;
     cursor: pointer;
+    z-index: 1;
     
 }
 
@@ -116,16 +127,26 @@ a span{
 
 
 
+
+
+
+
+
+
+
+
 /* Content */
 
 .content{
     width: 90%;
     margin: 30px auto 30px;
+    /* border: 1px solid red; */
 }
 
 .content .main-content{
     width: 70%;
     float: left;
+    /* border: 2px dashed green; */
 }
 
 .content .main-content .post{
@@ -135,6 +156,7 @@ a span{
     border-radius: 10px;
     background-color: white;
     position: relative;
+    /* border: 1px solid red; */
 }
 
 .content .main-content .post .post-image{ 
@@ -142,7 +164,7 @@ a span{
     height: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-
+    /* border: 3px dotted blue; */
     margin: 0px 10px 0px 0px;
     float: left;
 }
@@ -150,6 +172,7 @@ a span{
 .content .main-content .post .post-preview{
     width: 100%;
     padding: 5px;
+    /* border: 3px dashed green; */
 } 
 
 .content .main-content .post .readmore{
@@ -169,14 +192,22 @@ a span{
 } 
 
 
+
+
+
+
+
+
+
+
+
 /* Side bar content */
 
 .content .sidebar{
     width: 30%;
-    float: left;
-    
+    float: left;    
     /* border: 1px solid darkblue; */
-    height: 300px;
+
 }
 
 .content .sidebar .section{
@@ -301,9 +332,6 @@ a span{
     margin-bottom: 20px;
 }
 
-.auth-content form .reg-btn{
-    margin-left:39%;
-}
 
 .auth-content form h6{
     color :white;
@@ -348,6 +376,7 @@ a span{
 .footer .footer-content .footer-section{
     flex:1;
     padding: 25px;
+    
     /* border:1px solid blueviolet; */
 }
 
@@ -384,14 +413,23 @@ a span{
 
 .footer .footer-content .links ul{
     list-style: none;
+    /* text-align: center; */
 }
+
+
+.footer .footer-content .links h2{
+    text-align: justify;
+}
+
 
 .footer .footer-content .links ul a{
     display: block;
-    width: 200px;
+    /* width: 200px; */
     margin-bottom: 10px;
+    /* margin-left: 0px; */
     font-size: 1.2em;
     transition: .5s all;
+    /* border: 1px solid red; */
 }
 
 .footer .footer-content .links ul a:hover{
@@ -420,4 +458,116 @@ a span{
     left: 0px;
     padding: 20px;
     opacity: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY RESPONSIVE */
+@media only screen and (max-width:1060px){
+    .content{
+        width: 100%;
+    }
+    .footer{
+        height:430;
+    }
+
+    
+    .footer .footer-content .about .socials a{
+        display: inline;
+        font-size: 1.3em;
+        transition: .3s all;
+    }
+
+}
+
+@media only screen and (max-width:960px){
+    
+    .content .main-content{
+        width: 100%;
+        padding:0px 20px 0px 20px;
+    }
+
+    .content .main-content .post{
+        width: 100%;
+    }
+    
+    
+    .content .sidebar{
+        width: 100%;
+        padding:0px 40px 0px 40px;
+    
+    }
+
+    .content .sidebar .section.search{
+        margin-top: 30px;
+    }
+
+    .content .sidebar .section.search .search-bar{
+        width: 60%;
+    }
+
+    .footer{
+        height: auto;
+    }
+    
+    .footer .footer-content{
+        /* border: 1px solid red; */
+        height: auto;
+        flex-direction: column;
+    }
+
+    .footer .footer-content .contact-form {
+    padding-bottom:30px ;
+    
+    }
+    .footer .footer-content .links h2{
+        text-align: center;
+    }
+
+
+    .footer .footer-content .contact-form h2{
+        text-align: center;
+    }
+
+    .footer .footer-content .about .contact{
+        text-align: center;   
+    }
+
+    .footer .footer-content .about .socials{
+        text-align: center;
+    }
+
+    .footer .footer-content .about .socials a{
+        display: inline-block;
+    }
+
+}
+
+@media only screen and (max-width:600px){
+
+    .content .main-content .post{
+        height: auto;
+    }
+    
+    .content .main-content .post .post-image{ 
+        width: 100%;
+        height: 50%;
+    }
+    
+    .content .main-content .post .post-preview{
+        width: 100%;
+    } 
+
 }
