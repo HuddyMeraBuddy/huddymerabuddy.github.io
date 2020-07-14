@@ -490,7 +490,13 @@ a span{
         transition: .3s all;
     }
 
+    .auth-content{
+        width: 40%;
+    }
+
 }
+
+
 
 @media only screen and (max-width:960px){
     
@@ -553,19 +559,29 @@ a span{
         display: inline-block;
     }
 
+    .main-content-wrapper{
+        padding: 10px;
+    }
+
+    .auth-content{
+        width: 50%;
+    }
+
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:660px){
 
     .content .main-content .post{
         height: auto;
     }
 
+    .content .main-content.single{
+        padding: 10px 20px;
+    }
+
     .content .main-content .recent-post-title{
         text-align: center;
     }
-
-
     
     .content .main-content .post .post-image{ 
         width: 100%;
@@ -584,6 +600,11 @@ a span{
         position: static;
         width: 100%;
         text-align: center;
+    }
+
+    .auth-content{
+        width: 70%;
+        
     }
 
 }
